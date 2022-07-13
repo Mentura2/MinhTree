@@ -1,1 +1,86 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+main {
+    position: relative;
+}
+
+body {
+    background: url(./images/bg01.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+ul {
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 480px;
+}
+
+ul > li {
+    background-color: #fffa;
+     backdrop-filter: blur(5px) saturate(160%) contrast(100%);
+    -webkit-backdrop-filter: blur(5px) saturate(160%) contrast(100%);    
+    border-radius: 10em;
+    margin: 1.5em 0;
+    box-shadow: rgb(28 32 93 / 20%) 0px 2px 8px 8px;
+    transition: 0.5s ease-in-out;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+
+
+header {
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img {
+    border-radius: 100%;
+    width: 9rem;
+    height: 9rem;
+    border: 2px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 10px 13px;
+}
+
+header > h1 {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: #000a;
+    color: #cec2ffff;
+    padding: 0.3em 0.6em;
+    border: 1px solid #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(100%);
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
